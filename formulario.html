@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <meta name="description" content="formulario">
+   <meta name="keywords" content="formulario">
+   <meta name="author" content="yo">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Formulario</title>
+   <style>
+    input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+    <h1>Dades de l'alumne</h1>
+    <h4>Dades Personals</h4>
+<form>
+  <label for="fname">Nom:</label>
+  <input type="text" id="fname" name="fname"><hr>
+  <label for="lname">Cognoms:</label>
+  <input type="text" id="lname" name="lname"><hr>
+  <label for="pass">DNI:</label>
+  <input type="text" id="pass" name="pass">
+  <label for="lname">E-mail:</label>
+  <input type="email" id="em" name="em"><hr>
+  <label for="fecha">Data de neixament:</label>
+  <input type="date" id="fecha" name="fecha"><hr>
+</form>
+<h4>Dades Económiques</h4>
+<form>
+    <h4>Tipus de pagamet:</h4>
+  <input type="radio" id="tr" name="tr" value="Targeta">
+  <label for="tr">Targeta</label><hr>
+  <input type="radio" id="ef" name="ef" value="Efectiu">
+  <label for="ef">Efectiu</label><hr>
+  <input type="radio" id="dom" name="dom" value="Domiciliat">
+  <label for="dom">Domiciliat</label><hr>
+</form>
+<form>
+    <h4>Destí Erasmus</h4>
+    <textarea>Comentaris</textarea>
+    <label for="modulo">Ciutat:</label>
+    <select name="Ciutat:">
+        <option value="m01">Madrid</option>
+        <option value="m02">Paris</option>
+        <option value="m03">Londres</option>
+        <option value="m04">Canadá</option>
+        </select>
+    <label for="modulo">Segon Idioma:</label>
+    <select name="Segon Idioma:">
+        <option value="m05">Catalá</option>
+        <option value="m06">Castellá</option>
+        <option value="m07">Anglés</option>
+        <option value="m08">Françés</option>
+  </select>
+</form>
+</body>
+</html>
